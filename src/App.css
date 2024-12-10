@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
-}
+.navbar { background-color: #1a1a1a; }
+    .navbar-brand img { width: 50px; }
+    .search-bar { max-width: 600px; }
+    .navbar .form-control { background-color: white; }
+    .navbar .nav-link, .navbar .dropdown-toggle { color: #fff; }
+    .navbar .btn-outline-secondary { color: #fff; border-color: #fff; }
+    .navbar .nav-link:hover, .navbar .dropdown-toggle:hover { background-color: #f5c518; color: #ffffff; } /* Yellow background on hover, text stays white */
+    .dropdown-item:hover { background-color: #f5c518; color: #ffffff; } /* Yellow background with white text on hover */
+    .navbar .btn-outline-secondary:hover { background-color: #f5c518; border-color: #f5c518; color: #000; } /* Button hover */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    .footer {
+      background-color: #000;
+      color: #fff;
+      padding: 40px 0;
+    }
+    .footer .btn-yellow {
+      background-color: #f5c518;
+      color: #000;
+      font-weight: bold;
+      border: none;
+    }
+    .footer .btn-yellow:hover {
+      background-color: #e5b518;
+      color: #000;
+    }
+    .footer .social-icons a {
+      color: #fff;
+      margin-right: 15px;
+      font-size: 24px;
+    }
+    .footer a {
+      color: #fff;
+    }
+    .footer a:hover {
+      color: #f5c518;
+    }
+    .footer .qr-box {
+      border: 1px solid #fff;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .footer .bottom-links {
+      margin-top: 30px;
+    }
+    .footer .bottom-links a {
+      margin-right: 15px;
+    }
+    .footer .company-logo {
+      margin-top: 20px;
+    }
+    .footer .amazon-company {
+      color: #fff;
+      font-size: 14px;
+    }
+    .footer .copyright {
+      color: #fff;
+      margin-top: 10px;
+      font-size: 12px;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .card-rating {
+      color: #ffc107;
+      font-weight: bold;
+    }
+    .btn-trailer {
+      margin-top: auto;
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    .card-img-top {
+      height: 300px; /* Set the same height for all images */
+      object-fit: cover; /* Ensures the image covers the entire area and is cropped if necessary */
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    .card-title {
+      white-space: nowrap;  /* Prevents the text from wrapping into multiple lines */
+      overflow: hidden;     /* Ensures content that overflows is hidden */
+      text-overflow: ellipsis;  /* Adds the '...' when text is truncated */
+    }
